@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making Love for ...</title>
+
+    <style>
+      * {
+        margin: 0;
+        /* padding: 0; */
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .container {
+        width: 80vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -30px;
+        transform: scale(0.8);
+        animation: heartBit 1s infinite;
+      }
+
+      .loveLeft {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 100px 100px 0px 100px;
+      }
+      .loveRight {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 100px 100px 100px 0px;
+        position: absolute;
+        top: 17.7px;
+        right: -46px;
+      }
+      .loveBottom {
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        border-radius: 0px 0px 0px 0px;
+        transform: rotate(45deg) scale(1.4);
+        border-radius: 100px 0px 0px 0px;
+        position: absolute;
+        top: 68px;
+        right: 13.2px;
+      }
+
+      .message {
+        width: 80vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+      }
+
+      @keyframes heartBit {
+        0% {
+          transform: scale(0.8);
+        }
+        25% {
+          transform: scale(1.2);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        75% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Making love by coding</h3>
+    <br />
+    <div class="container">
+      <div class="loveBox">
+        <div class="loveLeft"></div>
+        <div class="loveRight"></div>
+        <div class="loveBottom"></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="message">
+      <p>Happy Valentiens day for all proggrammer</p>
+    </div>
+  </body>
+</html>
